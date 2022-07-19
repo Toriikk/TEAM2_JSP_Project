@@ -1,0 +1,33 @@
+
+7월 19, 2022 09:19:36.941 NEW SESSION
+7월 19, 2022 09:19:36.941 [15100:3108:0719/091936.940:ERROR:device_event_log_impl.cc(214)] [09:19:36.939] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+7월 19, 2022 09:20:15.532 [15192:7056:0719/092015.532:ERROR:device_event_log_impl.cc(214)] [09:20:15.532] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+7월 19, 2022 09:21:00.883 [1276:15160:0719/092100.883:ERROR:device_event_log_impl.cc(214)] [09:21:00.882] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+7월 19, 2022 09:21:58.864 [1276:8888:0719/092158.863:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+7월 19, 2022 09:27:36.750 [1276:15160:0719/092736.750:ERROR:CONSOLE(1)] "Session is unregistering, can't dispatch pending call to DOM.getDocument", source: devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js (1)
+7월 19, 2022 09:27:40.135 [1276:15160:0719/092740.135:ERROR:CONSOLE(1)] "Session is unregistering, can't dispatch pending call to DOM.getDocument", source: devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js (1)
+7월 19, 2022 09:27:40.467 [1276:15160:0719/092740.467:ERROR:CONSOLE(1)] "Session is unregistering, can't dispatch pending call to DOM.getDocument", source: devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js (1)
+7월 19, 2022 09:27:40.673 [1276:15160:0719/092740.673:ERROR:CONSOLE(1)] "Session is unregistering, can't dispatch pending call to DOM.getDocument", source: devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js (1)
+7월 19, 2022 09:27:40.852 [1276:15160:0719/092740.852:ERROR:CONSOLE(1)] "Session is unregistering, can't dispatch pending call to DOM.getDocument", source: devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js (1)
+7월 19, 2022 09:27:41.23 [1276:15160:0719/092741.023:ERROR:CONSOLE(1)] "Session is unregistering, can't dispatch pending call to DOM.getDocument", source: devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js (1)
+7월 19, 2022 09:27:41.231 [1276:15160:0719/092741.231:ERROR:CONSOLE(1)] "Session is unregistering, can't dispatch pending call to DOM.getDocument", source: devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js (1)
+7월 19, 2022 09:27:41.415 [1276:15160:0719/092741.415:ERROR:CONSOLE(1)] "Session is unregistering, can't dispatch pending call to DOM.getDocument", source: devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js (1)
+7월 19, 2022 09:27:41.584 [1276:15160:0719/092741.584:ERROR:CONSOLE(1)] "Session is unregistering, can't dispatch pending call to DOM.getDocument", source: devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js (1)
+7월 19, 2022 09:27:41.785 [1276:15160:0719/092741.785:ERROR:CONSOLE(1)] "Session is unregistering, can't dispatch pending call to DOM.getDocument", source: devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js (1)
+
+7월 19, 2022 16:32:14.69 NEW SESSION
+7월 19, 2022 16:32:14.69 [6912:992:0719/163214.068:ERROR:device_event_log_impl.cc(214)] [16:32:14.067] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+7월 19, 2022 16:33:12.06 [6912:12872:0719/163312.005:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+7월 19, 2022 16:34:09.850 [2704:6804:0719/163409.850:ERROR:device_event_log_impl.cc(214)] [16:34:09.849] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+7월 19, 2022 16:35:07.796 [2704:8608:0719/163507.796:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+7월 19, 2022 16:38:34.934 [14072:12948:0719/163834.934:ERROR:device_event_log_impl.cc(214)] [16:38:34.934] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+7월 19, 2022 16:39:12.190 [8104:13424:0719/163912.190:ERROR:device_event_log_impl.cc(214)] [16:39:12.189] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+7월 19, 2022 16:40:00.371 [9200:12412:0719/164000.370:ERROR:device_event_log_impl.cc(214)] [16:40:00.370] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+7월 19, 2022 16:40:58.282 [9200:12792:0719/164058.282:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+7월 19, 2022 16:52:15.938 [11036:4456:0719/165215.938:ERROR:device_event_log_impl.cc(214)] [16:52:15.938] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+7월 19, 2022 16:53:15.82 [10548:13088:0719/165315.082:ERROR:device_event_log_impl.cc(214)] [16:53:15.082] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+7월 19, 2022 16:54:03.104 [8240:13532:0719/165403.104:ERROR:device_event_log_impl.cc(214)] [16:54:03.105] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+7월 19, 2022 16:55:00.203 [5284:3468:0719/165500.203:ERROR:device_event_log_impl.cc(214)] [16:55:00.203] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+7월 19, 2022 16:55:58.137 [5284:3540:0719/165558.137:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+7월 19, 2022 17:19:43.370 [11568:9064:0719/171943.370:ERROR:device_event_log_impl.cc(214)] [17:19:43.370] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+7월 19, 2022 17:20:41.294 [11568:12928:0719/172041.293:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
