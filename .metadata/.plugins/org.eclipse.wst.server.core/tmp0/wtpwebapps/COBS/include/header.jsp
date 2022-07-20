@@ -30,7 +30,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-light bg-light static-top">
     <div class="container">
-         <a class="navbar-brand" href="/Tutoring/index.jsp">Wiser English</a>
+         <a class="navbar-brand" href="/Tutoring/index.jsp"><img src="/Tutoring/img/logo1.png" alt="CBS"></a>
          <a class="navbar-nav" href="/Tutoring/include/about.jsp">와이저</a>
          <a class="navbar-nav" href="/Tutoring/class/courseList">과정</a>
     </div>

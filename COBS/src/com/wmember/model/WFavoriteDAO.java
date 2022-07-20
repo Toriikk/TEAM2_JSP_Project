@@ -32,7 +32,7 @@ public class WFavoriteDAO {
 		
 		try {
 			con=getConnection();
-			String sql="INSERT INTO WFavorite(favoritenum, classnum, userid, classname) VALUES(WFavorite_seq.nextval,?,?,?)";
+			String sql="INSERT INTO WFAVORITE(favoritenum, classnum, userid, classname) VALUES(WFavorite_seq.nextval,?,?,?)";
 			ps=con.prepareStatement(sql);
 			ps.setInt(1, vo.getClassnum());
 			ps.setString(2, vo.getUserid());
@@ -54,7 +54,7 @@ public class WFavoriteDAO {
 		int flag=-1;
 		try {
 			con=getConnection();
-			String sql="select classnum, classname from WFavorite where userid='"+userid+"'";
+			String sql="select classnum, classname from WFAVORITE where userid='"+userid+"'";
 			st=con.createStatement();
 			rs=st.executeQuery(sql);
 			if(rs.next()) { //id ¸ÂÀ½
@@ -79,7 +79,7 @@ public class WFavoriteDAO {
 		
 		try {
 			con=getConnection();
-			String sql="select * from WFavorite where userid='"+userid+"'";
+			String sql="select * from WFAVORITE where userid='"+userid+"'";
 			st=con.createStatement();
 			rs=st.executeQuery(sql);
 			while(rs.next()) {
@@ -104,7 +104,7 @@ public class WFavoriteDAO {
 		Statement st=null;
 		try {
 			con=getConnection();
-			String sql="delete from WFavorite where favoritenum='"+favoritenum+"'";
+			String sql="delete from WFAVORITE where favoritenum='"+favoritenum+"'";
 			st=con.createStatement();
 			st.executeUpdate(sql);
 		} catch (Exception e) {
