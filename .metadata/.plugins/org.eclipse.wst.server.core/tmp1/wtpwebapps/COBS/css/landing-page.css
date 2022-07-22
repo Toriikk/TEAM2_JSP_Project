@@ -21,10 +21,10 @@ h6 {
 header.masthead {
   position: relative;
   background-color: #ffffff;
-  background: url("../gif/main.gif") no-repeat center center;
+  background: url("Tutoring/gif/main1.gif") no-repeat center center;
   background-size: cover;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   
   display: flex;
   flex-flow: column;

@@ -1,0 +1,11 @@
+package com.wmember.model;
+
+public class WQnaDTO {
+	private int qNum;
+	private String qTitle;
+	private String userId;
+	private String qreg_date;
+	private String content;
+	
+	
+	

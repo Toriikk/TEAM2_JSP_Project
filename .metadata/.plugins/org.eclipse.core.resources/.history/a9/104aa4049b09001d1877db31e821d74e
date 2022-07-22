@@ -1,0 +1,109 @@
+package com.wmember.model;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+
+public class WQnaDAO<WQna> {
+	  private Connection conn;
+	  private ResultSet rs;
+
+	  public WQnaDAO() {
+	  	try {
+	  		String dbURL = "jdbc:oracle:thin:@localhost:1521:XE";
+	  		String dbID = "TEAM2";
+	  		String dbPassword = "1234";
+	  		Class.forName("oracle.jdbc.OracleDriver");
+	  		conn = DriverManager.getConnection(dbURL, dbID, dbPassword);
+	  	} catch (Exception e) {
+	  		e.printStackTrace();
+	  	}
+	  }
+
+	  public String getDate() {
+	  	String SQL = "SELECT NOW()"; // 현재 시간 가져오기
+	  	try {
+	  		PreparedStatement pstmt = conn.prepareStatement(SQL);
+	  		rs = pstmt.executeQuery();
+	  		if (rs.next()) {
+	  			return rs.getString(1);
+	  		}
+	  	} catch(Exception e) {
+	  		e.printStackTrace();
+	  	}
+	  	return "";
+	  }
+
+	  public int getNext() { // 다음 글 가지고 오기.
+	  	String SQL = "SELECT QNUM FROM WQna ORDER BY QNUM DESC";
+	  	try {
+	  		PreparedStatement pstmt = conn.prepareStatement(SQL);
+	  		rs = pstmt.executeQuery();
+	  		if (rs.next()) {
+	  			return rs.getInt(1) + 1;
+	  		}
+	  		return 1; // 첫 번째 게시물인 경우
+	  	} catch(Exception e) {
+	  		e.printStackTrace();
+	  	}
+	  	return -1; // 데이터베이스 오류
+	  }
+
+	  public int write(String qTitle, String useId, String content) {
+	  	String SQL = "INSERT INTO WQna VALUES (?, ?, ?, ?, ?, ?)";
+	  	try {
+	  		PreparedStatement pstmt = conn.prepareStatement(SQL);
+	  		pstmt.setInt(1, getNext());
+	  		pstmt.setString(2, qTitle);
+	  		pstmt.setString(3, useId);
+	  		pstmt.setString(4, getDate());
+	  		pstmt.setString(5, content);
+	  		pstmt.setInt(6, 1);
+
+	  		return pstmt.executeUpdate();
+	  	} catch(Exception e) {
+	  		e.printStackTrace();
+	  	}
+	  	return -1; // 데이터베이스 오류
+	  }
+	  public ArrayList<WQna> getList(int pageNumber) {
+			String SQL = "SELECT * FROM WQna WHERE QNUM < ? AND QAvailable = 1 ORDER BY QNUM DESC LIMIT 10";
+			ArrayList<WQna> list = new ArrayList<WQna>();
+			try {
+				PreparedStatement pstmt = conn.prepareStatement(SQL);
+				pstmt.setInt(1, getNext() - (pageNumber -1) * 10);
+				rs = pstmt.executeQuery();
+				while (rs.next()) {
+					WQnaDAO wqna = new WQnaDAO();
+					wqna.setqNum(rs.getInt(1));
+					wqna.setQtitle(rs.getString(2));
+					wqna.setUserID(rs.getString(3));
+					wqna.setBbsDate(rs.getString(4));
+					wqna.setBbsContent(rs.getString(5));
+					wqna.setBbsAvailable(rs.getInt(1));
+					list.add(wqna);
+				}			
+			} catch(Exception e) {
+				e.printStackTrace();
+			}
+			return list;
+		}
+
+		public boolean nextPage(int pageNumber) {
+			String SQL = "SELECT * FROM wqna WHERE < ? AND bbsAvailable = 1";
+
+			try {
+				PreparedStatement pstmt = conn.prepareStatement(SQL);
+				pstmt.setInt(1, getNext() - (pageNumber -1) * 10);
+				rs = pstmt.executeQuery();
+				if (rs.next()) {
+					return true;
+				}			
+			} catch(Exception e) {
+				e.printStackTrace();
+			}
+			return false;
+		}
+	}

@@ -12,7 +12,7 @@ h1{
        
         <div class="mainLine">
           <span style="width: 100%; height: 200px;"></span>
-          <h1 style="color:#484848; font-size: 48px; line-height: 1.5em;">생생한 원어민 화상영어,<br/> 지금바로 시작하세요!</h1>
+          <h1 style="color:#484848; font-size: 48px; line-height: 1.5em;">누구나 들을 수 있는 무료 코딩 강의,<br/> 지금 바로 시작하세요!</h1>
         </div>
        
           <form>
@@ -36,8 +36,8 @@ h1{
             <div class="features-icons-icon d-flex">
               <i class="icon-screen-desktop m-auto text-primary"></i>
             </div>
-            <h3>수업</h3>
-            <p class="lead mb-0">튜터와 만들어 나가는 유연한 학습 스케쥴</p>
+            <h3>강의</h3>
+            <p class="lead mb-0">누구나, 어디서나 들을 수 있는 <br/>무료 강의</p>
           </div>
         </div>
         <div class="col-lg-4">
@@ -46,7 +46,7 @@ h1{
               <i class="icon-layers m-auto text-primary"></i>
             </div>
             <h3>커리큘럼</h3>
-            <p class="lead mb-0">내 레벨에 맞춰 선택해 더욱 체계적인 수업 진행</p>
+            <p class="lead mb-0">내 레벨에 맞춰 선택하고<br/> 체계적인 수업 진행</p>
           </div>
         </div>
         <div class="col-lg-4">
@@ -55,7 +55,7 @@ h1{
               <i class="icon-check m-auto text-primary"></i>
             </div>
             <h3>수료증</h3>
-            <p class="lead mb-0">10시간 이상 수업 시, 캠블리 수료증 발급</p>
+            <p class="lead mb-0">완강하면 주어지는 <br/>수료증을 모아보세요! <br/>쌓여가는 수료증과 함께<br/> 늘어나는 성취감!</p>
           </div>
         </div>
       </div>

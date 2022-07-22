@@ -9,7 +9,7 @@
 			<th style="width: 8%">글번호</th>
 			<th style="width: 13%">작성자</th>
 			<th>제목</th>
-			<th style="width: 8%">작성일</th>
+			<th style="width: 9%">작성일</th>
 			<th style="width: 7%">조회수</th>
 		</tr>
 	</thead>

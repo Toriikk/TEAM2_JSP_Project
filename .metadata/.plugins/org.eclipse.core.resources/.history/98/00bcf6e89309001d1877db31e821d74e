@@ -1,0 +1,5 @@
+package com.wmember.model;
+
+public class WQnaDTO {
+
+}

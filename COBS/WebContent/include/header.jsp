@@ -31,8 +31,9 @@
   <nav class="navbar navbar-white bg-white static-top">
     <div class="container">
          <a class="navbar-brand" href="/Tutoring/index.jsp"><img src="/Tutoring/img/logo1.png" alt="CBS"></a>
-         <a class="navbar-nav" href="/Tutoring/include/about.jsp">와이저</a>
+         <a class="navbar-nav" href="/Tutoring/include/about.jsp">COBS?</a>
          <a class="navbar-nav" href="/Tutoring/class/courseList">과정</a>
+         <a class="navbar-nav" href="/Tutoring/qna/qnaList.jsp">QnA</a>
     </div>
       <c:choose>
      	<c:when test="${empty sessionScope.userid}">
