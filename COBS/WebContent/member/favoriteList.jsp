@@ -54,7 +54,7 @@ $(document).ready(function(){
 					$.each(d.carr, function(key, val){ 
 		            	htmlStr+="<tr>";
 	            		htmlStr+="<td>"+val.classnum+"</td>";
-	            		htmlStr+="<td>"+val.classname+"</td>";
+	            		htmlStr+="<td><a href=\"/Tutoring/class/CourseDetail?num="+val.classnum+"\">"+val.classname+"</a></td>";
 	            		htmlStr+="<td style='text-align: center;'><a href='javascript:favoritedel("+val.favoritenum+")'><img src='/Tutoring/img/delete.png' style='height:20px; width:20px;'></a></td>";
 						htmlStr+="</tr>";
 					})
