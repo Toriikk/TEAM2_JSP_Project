@@ -2,9 +2,9 @@
     pageEncoding="UTF-8"%>
 <%@ include file="/include/header.jsp" %>
 <style>
-h1{
+  h1{
 	text-align: left;
-}
+  }
 </style>
   <!-- Masthead -->
   <header class="masthead text-white text-center">
