@@ -80,6 +80,16 @@ a:hover{
   
   <div class="input-group mb-3">
     <div class="input-group-prepend">
+      <span class="input-group-text">유튜브 주소 ID</span>
+    </div>
+      <span>https://youtu.be/</span>
+      <input type="text" class="form-control" id="videourl" name="videourl">
+  </div>
+  <p>*유튜브 주소의 ID를 입력해주세요</p>
+  <br/>
+  
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
       <span class="input-group-text">강의명</span>
     </div>
       <input type="text" class="form-control" id="classname" name="classname">

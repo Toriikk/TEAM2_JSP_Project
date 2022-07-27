@@ -10,6 +10,7 @@ public class WClassDTO {
 	private String topic;
 	private String content;
 	private String uploadFile;
+	private String videourl;
 	
 	public String getUploadFile() {
 		return uploadFile == null ? "" : uploadFile.trim();
@@ -60,6 +61,14 @@ public class WClassDTO {
 	public void setContent(String content) {
 		this.content = content;
 	}
+	
+	public String getVideourl() {
+		return videourl;
+	}
+	public void setVideourl(String videourl) {
+		this.videourl = videourl;
+	}
+	
 	
 	
 	

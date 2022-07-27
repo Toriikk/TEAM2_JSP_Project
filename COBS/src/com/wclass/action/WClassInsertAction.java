@@ -53,27 +53,28 @@ public class WClassInsertAction extends HttpServlet {
 		ServletContext context=getServletContext();
 		String uploadFilePath=context.getRealPath(savePath);
 		
-		//multipart/form ¹æ½ÄÀº request.getParameter·Î ¹Ş¾Æ¿Ã ¼ö ¾øÀ½
+		//multipart/form ë°©ì‹ì€ request.getParameterë¡œ ë°›ì•„ì˜¬ ìˆ˜ ì—†ìŒ
 		MultipartRequest multi=new MultipartRequest(
-				request, //request°´Ã¼
-				uploadFilePath, //¼­¹ö»óÀÇ ½ÇÁ¦ µğ·ºÅä¸®
-				uploadFileSizeLimit, //ÃÖ´ë ¾÷·Îµå ÆÄÀÏ Å©±â
-				encType, //ÀÎÄÚµù ¹æ¹ı
-				new DefaultFileRenamePolicy()); //µ¿ÀÏ ÆÄÀÏ »õÀÌ¸§ ºÎ¿©
+				request, //requestê°ì²´
+				uploadFilePath, //ì„œë²„ìƒì˜ ì‹¤ì œ ë””ë ‰í† ë¦¬
+				uploadFileSizeLimit, //ìµœëŒ€ ì—…ë¡œë“œ íŒŒì¼ í¬ê¸°
+				encType, //ì¸ì½”ë”© ë°©ë²•
+				new DefaultFileRenamePolicy()); //ë™ì¼ íŒŒì¼ ìƒˆì´ë¦„ ë¶€ì—¬
 		
-		//¾÷·ÎµåµÈ ÆÄÀÏÀÌ¸§ ±¸ÇÏ±â
+		//ì—…ë¡œë“œëœ íŒŒì¼ì´ë¦„ êµ¬í•˜ê¸°
 		String fileName=multi.getFilesystemName("uploadFile");
 		
-		if(fileName==null) { //ÆÄÀÏ ¾÷·Îµå ¾ÈµÊ
-			System.out.println("ÆÄÀÏ ¾÷·Îµå µÇÁö ¾Ê¾ÒÀ½");
+		if(fileName==null) { //íŒŒì¼ ì—…ë¡œë“œ ì•ˆë¨
+			System.out.println("íŒŒì¼ ì—…ë¡œë“œ ë˜ì§€ ì•Šì•˜ìŒ");
 		}
 		
 		WClassDTO wclass=new WClassDTO();
-		wclass.setUploadFile(fileName);
-		wclass.setClassname(multi.getParameter("classname"));
-		wclass.setClevel(multi.getParameter("clevel"));
+		wclass.setUploadFile(fileName);  // ê°ì²´ì— ê° ì •ë³´ë¥¼ ì €ì¥
+		wclass.setClassname(multi.getParameter("classname")); //ê°•ì˜ëª…(classinsert.jspì—ì„œ ì…ë ¥í•œ ê²ƒë“¤)
+		wclass.setClevel(multi.getParameter("clevel"));       //ê°•ì˜ìˆ˜ì¤€
 		wclass.setContent(multi.getParameter("content"));
 		wclass.setTopic(multi.getParameter("topic"));
+		wclass.setVideourl(multi.getParameter("videourl"));
 		wclass.setStu_num(1);
 		wclass.setStu_regdate(" ");
 		
@@ -81,12 +82,12 @@ public class WClassInsertAction extends HttpServlet {
 //		classname, stu_num, stu_regdate, topic, content, "
 //				+ " clevel, uploadfile
 //		
-		int flag=dao.classInsert(wclass);
+		int flag=dao.classInsert(wclass); // ê°•ì˜ë“±ë¡
 		if(flag==1) {
 			response.setContentType("text/html; charset=utf-8");
 			PrintWriter out = response.getWriter();
 			out.println("<script>");
-			out.println("alert('°­ÀÇ°¡ µî·ÏµÇ¾ú½À´Ï´Ù');");
+			out.println("alert('ê°•ì˜ê°€ ë“±ë¡ë˜ì—ˆìŠµë‹ˆë‹¤');");
 			out.println("history.back(-1);");
 			out.println("</script>");
 		}

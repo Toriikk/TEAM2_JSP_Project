@@ -248,6 +248,13 @@ function showRequest(){
 		<p>왜 이런 과정을 수강해야 하나요?</p>
 		<br/>
 		<span style="color: gray;">${dto.content}</span>
+		<c:if test="${not empty dto.videourl}">
+		<div  style="margin-bottom:10px; padding-bottom:20px;">                    
+    	<iframe width="680" height="350" src="https://www.youtube.com/embed/${dto.videourl}" 
+    	title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    	</iframe>
+    	</div>
+	</c:if>
 	</div>
 <!-- 강의 소개 끝 -->
 	
