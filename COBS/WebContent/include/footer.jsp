@@ -5,12 +5,6 @@ footer{
 	clear: both;
 }
 </style>
-<script>
-function openWindowPop(url, name){
-    var options = 'top=10, left=10, width=500, height=600, status=no, menubar=no, toolbar=no, resizable=no';
-    window.open(url, name, options);
-}
-</script>
  <!-- Footer -->
   <footer class="footer bg-light">
     <div class="container">
@@ -18,11 +12,11 @@ function openWindowPop(url, name){
         <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
           <ul class="list-inline mb-2">
             <li class="list-inline-item">
-              <a href="/Tutoring/include/about.jsp">About</a>
+              <a href="#">About</a>
             </li>
             <li class="list-inline-item">&sdot;</li>
             <li class="list-inline-item">
-              <a href="javascript:openWindowPop('/Tutoring/include/contact.jsp', 'contact');">Contact</a>
+              <a href="#">Contact</a>
             </li>
             <li class="list-inline-item">&sdot;</li>
             <li class="list-inline-item">
@@ -33,7 +27,7 @@ function openWindowPop(url, name){
               <a href="#">Privacy Policy</a>
             </li>
           </ul>
-          <p class="text-muted small mb-4 mb-lg-0">&copy; TEAM2 2022. All Rights Reserved.</p>
+          <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2020. All Rights Reserved.</p>
         </div>
         <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
           <ul class="list-inline mb-0">

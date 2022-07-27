@@ -12,7 +12,7 @@ import javax.naming.InitialContext;
 import javax.sql.DataSource;
 
 public class WClassDAO {
-	//µðºñ¼ÂÆÃ
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	private static WClassDAO instance=new WClassDAO();
 	public static WClassDAO getInstance() {
 		return instance;
@@ -24,7 +24,7 @@ public class WClassDAO {
 		return ds.getConnection();
 	}
 	
-	//°­ÀÇµî·Ï
+	//ï¿½ï¿½ï¿½Çµï¿½ï¿½
 	public int classInsert(WClassDTO vo) {
 		Connection con=null;
 		PreparedStatement ps=null;
@@ -52,7 +52,7 @@ public class WClassDAO {
 		return flag;
 	}
 	
-	//°úÁ¤ ¸Þ´º Å¬¸¯½Ã ÀüÃ¼º¸±â
+	//ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½
 		public ArrayList<WClassDTO> classList() {
 			Connection con=null;
 			Statement st=null;
@@ -84,7 +84,7 @@ public class WClassDAO {
 			return arr;
 		}
 	
-	//°Ë»ö ¾Æ´Ñ ÀüÃ¼º¸±â
+	//ï¿½Ë»ï¿½ ï¿½Æ´ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½
 	public ArrayList<WClassDTO> classList(int startRow, int endRow) {
 		Connection con=null;
 		PreparedStatement ps=null;
@@ -122,7 +122,7 @@ public class WClassDAO {
 		return arr;
 	}
 	
-	//°Ë»ö ÀüÃ¼º¸±â
+	//ï¿½Ë»ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½
 	public ArrayList<WClassDTO> classList(String field, String word, int startRow, int endRow) {
 		Connection con=null;
 		PreparedStatement ps=null;
@@ -161,7 +161,7 @@ public class WClassDAO {
 		return arr;
 	}
 	
-	//°­ÀÇ¼ö Ãâ·Â
+	//ï¿½ï¿½ï¿½Ç¼ï¿½ ï¿½ï¿½ï¿½
 	public int getCount(String field, String word) {
 		Connection con=null;
 		Statement st=null;
@@ -189,7 +189,7 @@ public class WClassDAO {
 		return count;
 	}
 	
-	//°­ÀÇ »ó¼¼º¸±â
+	//ï¿½ï¿½ï¿½ï¿½ ï¿½ó¼¼ºï¿½ï¿½ï¿½
 	public WClassDTO classView (int classnum) {
 		Connection con=null;
 		Statement st=null;
@@ -219,7 +219,7 @@ public class WClassDAO {
 		return dto;
 	}
 	
-	//°­ÀÇÁ¤º¸ ¼öÁ¤
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	public int classUpdate(WClassDTO vo) {
 		Connection con=null;
 		PreparedStatement ps=null;
@@ -243,7 +243,7 @@ public class WClassDAO {
 		return flag;
 	}
 	
-	//»èÁ¦
+	//ï¿½ï¿½ï¿½ï¿½
 	public void classDel(int classnum) {
 		Connection con=null;
 		Statement st=null;
@@ -259,7 +259,7 @@ public class WClassDAO {
 		}
 	}
 	
-	//´Ý±â closeConnection
+	//ï¿½Ý±ï¿½ closeConnection
 	private void closeConnection(Connection con, PreparedStatement ps) {
 		try {
 			if(ps!=null) ps.close();

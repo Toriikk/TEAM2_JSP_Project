@@ -102,11 +102,12 @@ a:hover{
 <div class="container">
 <h3>과정 둘러보기</h3>
 <hr>
-<p style="font-size:1.25em;">유창한 영어의 기본 요소</p>
-<p style="font-size:0.9em;">유창한 영어로 대화하며 자신감을 키워보세요. 간단한 대화부터 복잡한 시사 문제에 대해 논리정연한 의견을 표현하는 것까지, 다양한 레벨의 과정을 통해 모두가 무언가를 배울 수 있습니다.</p>
+<p style="font-size:1.25em;">왕초보 탈출코스</p>
+
+<p style="font-size:0.9em;">눈높이에 맞는 수업으로 자신감과 실력을 키워보세요. 간단한 문제부터 복잡한 문제에 대해 자세한 설명, A부터Z까지! 누구나 이해할 수 있습니다.</p>
 <div class="card-columns" style="column-count:4;">
 	<c:forEach items="${dto}" var="dto">
-		<c:if test="${dto.clevel eq 'basic'}">
+		<c:if test="${dto.clevel eq 'beginner'}">
 		<a href="CourseDetail?num=${dto.classnum}">
 			<div class="card">
 				<div class="card-header" style="background-image: url('/Tutoring/img/${dto.uploadFile}');">
@@ -124,11 +125,33 @@ a:hover{
 </div>
 <br/><br/>
 
-<p style="font-size:1.25em;">경력 개발</p>
-<p style="font-size:0.9em;">해외 환경에서 비즈니스 관련 대화를 하려면 유창한 영어 실력만으로는 부족합니다. 언어와 비언어로 이루어진 다문화 커뮤니케이션은 경력 개발의 강력한 도구입니다.</p>
+<p style="font-size:1.25em;">중급자를 위한 코스</p>
+<p style="font-size:0.9em;">왕초보를 벗어나신 분들과 실력이 UP되고 싶어하시는 분들을 위해 준비된 코스!</p>
 <div class="card-columns" style="column-count:4;">
 	<c:forEach items="${dto}" var="dto">
-		<c:if test="${dto.clevel eq 'career'}">
+		<c:if test="${dto.clevel eq 'intermediate'}">
+		<a href="CourseDetail?num=${dto.classnum}">
+			<div class="card">
+				<div class="card-header" style="background-image: url('/Tutoring/img/${dto.uploadFile}');"> <!-- upload파일에 사진이 안담겨 사진경로 바꿈 -->
+				</div>
+				<div class="card-body">
+					<div class="card-body-header" >
+						<h5>${dto.classname}</h5>
+						<p class = "card-body-nickname" style="font-size:0.9em;">${dto.topic}</p>
+					</div>
+				</div>
+			</div>
+		</a>
+		</c:if>
+	</c:forEach>
+</div>
+<br/><br/>
+
+<p style="font-size:1.25em;">상급자를 위한 코스</p>
+<p style="font-size:0.9em;">어느정도 실력을 섭렵하셨다면,이제 더 심화된 강의로 실력을 키워보세요!.</p>
+<div class="card-columns" style="column-count:4;">
+	<c:forEach items="${dto}" var="dto">
+		<c:if test="${dto.clevel eq 'senior'}">
 		<a href="CourseDetail?num=${dto.classnum}">
 			<div class="card">
 				<div class="card-header" style="background-image: url('/Tutoring/img/${dto.uploadFile}');">
@@ -146,29 +169,7 @@ a:hover{
 </div>
 <br/><br/>
 
-<p style="font-size:1.25em;">자신을 표현해보세요</p>
-<p style="font-size:0.9em;">영어를 배우면 전 세계 사람들과 더 쉽게 교류할 수 있습니다. 요즘 화두가 되는 다양한 주제를 탐색하면서 특정 분야 어휘를 확장하고, 다른 문화와 관점에 대해 배워보세요!</p>
-<div class="card-columns" style="column-count:4;">
-	<c:forEach items="${dto}" var="dto">
-		<c:if test="${dto.clevel eq 'expression'}">
-		<a href="CourseDetail?num=${dto.classnum}">
-			<div class="card">
-				<div class="card-header" style="background-image: url('/Tutoring/img/${dto.uploadFile}');">
-				</div>
-				<div class="card-body">
-					<div class="card-body-header" >
-						<h5>${dto.classname}</h5>
-						<p class = "card-body-nickname" style="font-size:0.9em;">${dto.topic}</p>
-					</div>
-				</div>
-			</div>
-		</a>
-		</c:if>
-	</c:forEach>
-</div>
-<br/><br/>
-
-<p style="font-size:1.25em;">시험 준비</p>
+<%-- <p style="font-size:1.25em;">시험 준비</p>
 <p style="font-size:0.9em;">최신 시험 기출 문제를 연습해 다가오는 영어 말하기 시험에 대비하세요.</p>
 <div class="card-columns" style="column-count:4;">
 	<c:forEach items="${dto}" var="dto">
@@ -189,7 +190,7 @@ a:hover{
 	</c:forEach>
 </div>
 <br/><br/>
-
+ --%>
 </div>
 </body>
 </html>

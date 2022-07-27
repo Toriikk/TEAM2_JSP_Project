@@ -21,7 +21,7 @@ h6 {
 header.masthead {
   position: relative;
   background-color: #ffffff;
-  background: url("Tutoring/gif/main1.gif") no-repeat center center;
+  /* background-image: url("/AA/COBS/WebContent/img/about2.jpg") no-repeat center center; */
   background-size: cover;
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -39,6 +39,7 @@ header.masthead .overlay {
   background-color: #FFC846;
   height: 100%;
   width: 100%;
+  background: url("../img/about2.jpg") no-repeat center center;
   top: 0;
   left: 0;
   opacity: 0.1;

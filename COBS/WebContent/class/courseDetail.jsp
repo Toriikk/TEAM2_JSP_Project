@@ -227,7 +227,7 @@ function showRequest(){
 			    <input type="hidden" id="classname" name="classname" value="${dto.classname}">
 			    <input type="hidden" id="userid" name="userid" value="${sessionScope.userid}">
 			<!-- 카드 영역 -->
-			<div class="card-header" style="background-image: url('/Tutoring/upload/${dto.uploadFile}');">
+			<div class="card-header" style="background-image: url('/Tutoring/img/${dto.uploadFile}');"> <!-- upload파일에 사진이 안담겨 사진경로 바꿈 -->
 			</div>
 			<div class="card-body">
 				<div class="card-body-header" >
@@ -235,7 +235,7 @@ function showRequest(){
 					<p class = "card-body-nickname" style="font-size:0.9em;">${dto.topic}</p>
 				</div>
 				<div class="button">
-					<input type="button" class="btn btn-info" value="등록하기" id="subscribe" style="width: 100%;">
+					<input type="button" class="btn btn-info" value="즐겨찾기 등록하기" id="subscribe" style="width: 100%;">
 				</div>
 			</div>
 			<!-- 카드 영역 끝 -->
@@ -244,12 +244,13 @@ function showRequest(){
 	</div>
 	<br/>
 	<div class="content">
-		<p style="font-size: 1.25em;">개요</p><br/>
+		<p style="font-size: 1.25em;">강의 소개</p><br/>
 		<p>왜 이런 과정을 수강해야 하나요?</p>
 		<br/>
 		<span style="color: gray;">${dto.content}</span>
 	</div>
 <!-- 강의 소개 끝 -->
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/oJlCC1DutbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 	
 <!-- 게시판 -->
 	<div class="board">

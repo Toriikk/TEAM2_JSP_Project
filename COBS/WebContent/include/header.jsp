@@ -55,7 +55,7 @@
     	<c:when test="${sessionScope.admin==0}">
     		<ul class="navbar-nav">
 		      <li class="nav-item">
-		      	<a class="btn btn-gray" href="/Tutoring/member/view">내계정</a>
+		      	<a class="btn btn-gray" href="/Tutoring/member/view">마이페이지</a>
 			    <a class="btn btn-info" href="/Tutoring/member/logout">로그아웃</a>
 		      </li>
 		  	</ul>

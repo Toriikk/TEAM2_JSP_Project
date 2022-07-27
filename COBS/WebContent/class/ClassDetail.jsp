@@ -75,10 +75,11 @@ img{
       <span class="input-group-text">강의분류</span>
     </div>
       <select name="clevel" id="clevel" name="clevel">
-      	<option value="basic" class="form-control" >유창한 영어의 기본 요소</option>
-      	<option value="career" class="form-control">경력 개발</option>
-      	<option value="expression" class="form-control">자신을 표현해보세요</option>
-      	<option value="test" class="form-control">시험 준비</option>
+      	<option value="beginner" class="form-control" >왕초보 탈출코스</option>
+      	<option value="intermediate" class="form-control">중급자를 위한 코스</option>
+      	<option value="senior" class="form-control">상급자를 위한 코스</option>
+      	<!-- <option value="test" class="form-control">시험 준비</option> -->
+ 
       </select>
   </div>
   <br/>

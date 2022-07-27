@@ -41,7 +41,7 @@ public class CommentListAction extends HttpServlet {
 		int bnum=Integer.parseInt(request.getParameter("num"));
 		WBoardDAO dao=WBoardDAO.getInstance();
 		ArrayList<CommentDTO> arr=dao.commentList(bnum);
-		//arr¸¦ jsonÇüÅÂ·Î ¸®ÅÏ
+		//arrï¿½ï¿½ jsonï¿½ï¿½ï¿½Â·ï¿½ ï¿½ï¿½ï¿½ï¿½
 		JSONObject mainObj=new JSONObject();
 		JSONArray jarr=new JSONArray();
 		
@@ -69,4 +69,6 @@ public class CommentListAction extends HttpServlet {
 		doGet(request, response);
 	}
 
+
+	
 }

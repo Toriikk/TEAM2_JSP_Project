@@ -50,21 +50,22 @@ h5 a{
 		<c:forEach items="${wclass}" var="wclass" varStatus="st">
 		<tr>
 			<td>${rowNo-st.index}</td>
-			<c:if test="${wclass.clevel eq 'basic'}">
-				<td>유창한 영어의 기본 요소</td>
+			<c:if test="${wclass.clevel eq 'beginner'}">
+				<td>왕초보 탈출코스</td>
 			</c:if>
-			<c:if test="${wclass.clevel eq 'career'}">
-				<td>경력 개발</td>
+			<c:if test="${wclass.clevel eq 'intermediate'}">
+				<td>중급자를 위한 코스</td>
 			</c:if>
-			<c:if test="${wclass.clevel eq 'expression'}">
-				<td>자신을 표현해보세요</td>
+			<c:if test="${wclass.clevel eq 'senior'}">
+				<td>상급자를 위한 코스</td>
 			</c:if>
-			<c:if test="${wclass.clevel eq 'test'}">
+			<%-- <c:if test="${wclass.clevel eq 'test'}">
 				<td>시험 준비</td>
-			</c:if>
+			</c:if> --%>
       		<td><a href="ClassDetail?num=${wclass.classnum}">${wclass.classname}</a></td>
       		<td>${wclass.topic}</td>
       	</tr>
+         	
 		</c:forEach>
 	</tbody>
 </table>

@@ -65,27 +65,27 @@ h1{
   <!-- Testimonials -->
   <section class="testimonials text-center bg-light">
     <div class="container">
-      <h2 class="mb-5">유학 없이도 유창하게 영어로 말할 수 있어요!</h2>
+      <h2 class="mb-5">지금 가장 인기있는 강의 탑3!</h2>
       <div class="row">
         <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg" alt="">
-            <h5>Margaret E.</h5>
-            <p class="font-weight-light mb-0">"I have been teaching English for 3 years. I am very patient, kind and I love to learn about new cultures and your thoughts about life."</p>
+            <img class="img-fluid rounded-circle mb-3" src="img/bjavat.jpg" alt="">
+            <h5>강의1.</h5>
+            <p class="font-weight-light mb-0">강의1에 대한 설명..</p>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg" alt="">
-            <h5>Fred S.</h5>
-            <p class="font-weight-light mb-0">"A conversationalist, I have worked internationally in business (operations, sales, training and HR) and am also licensed to teach scuba!"</p>
+            <img class="img-fluid rounded-circle mb-3" src="img/expression3.JPG" alt="">
+            <h5>강의2.</h5>
+            <p class="font-weight-light mb-0">강의2에대한 설명</p>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg" alt="">
-            <h5>Sarah W.</h5>
-            <p class="font-weight-light mb-0">"I own and run a small business, am easy to speak to and hold a TEFL qualification. I look forward to meeting you!"</p>
+            <img class="img-fluid rounded-circle mb-3" src="img/java2.jpg" alt="">
+            <h5>강의3.</h5>
+            <p class="font-weight-light mb-0">강의3에대한 설명</p>
           </div>
         </div>
       </div>
@@ -93,7 +93,7 @@ h1{
   </section>
 
   <!-- Call to Action -->
-  <section class="call-to-action text-white text-center">
+ <!--  <section class="call-to-action text-white text-center">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
@@ -114,5 +114,5 @@ h1{
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 <%@ include file="/include/footer.jsp" %>
