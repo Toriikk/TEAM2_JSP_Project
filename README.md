@@ -17,3 +17,5 @@ api : 다음(daum) 주소찾기
 
 -프로젝트 기간
 2022/07/11~2022/07/28
+
+* PPT 보기 [Link](https://docs.google.com/presentation/d/1_9hk9fDvFmMzGXSKpEJHsAZZ9SZUfArKSWYL7M1oafI/edit?usp=sharing)
